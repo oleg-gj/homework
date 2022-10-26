@@ -57,7 +57,7 @@ print("Anna has {quantity_apples} apples and {quantity_peaches} peaches.".format
 #task_8
 print('Task 8')
 
-print("Anna has {:.5s} apples and {:.3s} peaches.".format('123456', '1234567'))
+print("Anna has {:.5} apples and {:.3} peaches.".format('123456', '1234567'))
 
 
 #task_9
@@ -70,7 +70,7 @@ print(f"Anna has {quantity_apples} apples and {quantity_peaches} peaches.")
 #task_10
 print('Task 10')
 
-print("Anna has %s apples and %s peaches."%(2,4))
+print("Anna has %d apples and %d peaches."%(2,4))
 
 #task_11
 print('Task 11')
@@ -153,13 +153,13 @@ print('Task 20')
 
 
 lst_to_sort = [5, 18, 1, 24, 33, 15, 13, 55]
-sorted(lst_to_sort)
+print(sorted(lst_to_sort))
 
 #task_21
 print('Task 21')
 
 
-sorted(lst_to_sort, reverse=True)
+print(sorted(lst_to_sort, reverse=True))
 
 #task_22
 print('Task 22')
@@ -174,7 +174,8 @@ print('Task 23')
 
 list_A = [2, 3, 4]
 list_B = [5, 6, 7]
-list_sum = list(map(sum, zip(list_A,list_B)))
+list_1 = list(map(lambda x,y: x**y, list_A,list_B))
+print(list_1)
 
 #task_24
 print('Task 24')
